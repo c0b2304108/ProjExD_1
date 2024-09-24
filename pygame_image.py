@@ -27,7 +27,7 @@ def main():
             kt_rect.move_ip((0,-1))
         if key_list[pg.K_DOWN]:#DOWN
             kt_rect.move_ip((0,+1))
-        if key_list[pg.K_LEFT]:
+        if key_list[pg.K_LEFT]: #LEFT
             kt_rect.move_ip((-1, 0))
         if key_list[pg.K_RIGHT]:
             kt_rect.move_ip((+1,0))
