@@ -26,8 +26,6 @@ def main():
         PO = 0
 
 
-        
-
         key_list = pg.key.get_pressed()
         if key_list[pg.K_UP]: # UP
             YO -= 1
