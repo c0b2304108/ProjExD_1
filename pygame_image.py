@@ -29,7 +29,7 @@ def main():
             kt_rect.move_ip((0,+1))
         if key_list[pg.K_LEFT]: #LEFT
             kt_rect.move_ip((-1, 0))
-        if key_list[pg.K_RIGHT]:
+        if key_list[pg.K_RIGHT]: #RIGHT
             kt_rect.move_ip((+1,0))
 
         x = -(tmr%1600)
