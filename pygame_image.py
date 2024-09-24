@@ -32,7 +32,7 @@ def main():
         if key_list[pg.K_RIGHT]: #RIGHT
             kt_rect.move_ip((+1,0))
 
-        x = -(tmr%1600)
+        x = -(tmr%1600) #%1600
         screen.blit(bg_img, [x,0])
         screen.blit(pg.transform.flip(bg_img, True, False), [x+1600,0])
         screen.blit(bg_img, [x+3200,0])
