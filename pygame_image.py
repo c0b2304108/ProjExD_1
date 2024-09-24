@@ -22,15 +22,23 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
 
+        YO = 0
+        PO = 0
+
+
+        
+
         key_list = pg.key.get_pressed()
         if key_list[pg.K_UP]: # UP
-            kt_rect.move_ip((0,-1))
+            YO -= 1
         if key_list[pg.K_DOWN]:#DOWN
-            kt_rect.move_ip((0,+1))
+            YO += 1
         if key_list[pg.K_LEFT]: #LEFT
-            kt_rect.move_ip((-1, 0))
+            PO -= 1
         if key_list[pg.K_RIGHT]: #RIGHT
-            kt_rect.move_ip((+1,0))
+            PO += 2
+
+        kt_rect.move_ip(PO-1, YO)
 
         x = -(tmr%1600) #%1600
         screen.blit(bg_img, [x,0])
