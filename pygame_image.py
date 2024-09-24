@@ -23,7 +23,7 @@ def main():
             if event.type == pg.QUIT: return
 
         key_list = pg.key.get_pressed()
-        if key_list[pg.K_UP]:
+        if key_list[pg.K_UP]: # UP
             kt_rect.move_ip((0,-1))
         if key_list[pg.K_DOWN]:
             kt_rect.move_ip((0,+1))
